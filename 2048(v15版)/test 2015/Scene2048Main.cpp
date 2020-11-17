@@ -6,6 +6,7 @@
 #include "GameL\SceneObjManager.h"
 #include "GameL\DrawFont.h"
 #include "GameL\Audio.h"
+#include "GameL/DrawTexture.h"
 //#include "GameL\DrawTexture.h"
 
 //使用するネームスペース
@@ -34,6 +35,8 @@ void CScene2048Main::InitScene()
 	Objs::InsertObj(p, OBJ_2048, 1);
 
 	//グラフィック読み込み
+	Draw::LoadImageW(L"Picture/2048panel(384).png", 0, TEX_SIZE_512);
+	Draw::LoadImageW(L"Picture/Number.png", 1, TEX_SIZE_512);
 
 	//音楽情報読み込み
 
