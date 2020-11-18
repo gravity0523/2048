@@ -20,5 +20,8 @@ private:
 
 	//クリック判定
 	bool c_flag[2]; //クリックのフラグ	[0]=押している[1]=押していない
-
+	bool downflag;
+	bool upflag;
+	bool leftflag;
+	bool rightflag;
 };
